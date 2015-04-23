@@ -8,20 +8,19 @@ var encodeOptions = {
   highRes: {
     input: '',
     output: '',
-    optimize: true,
+    // optimize: true,
     height: 720,
     ab: 128,
     vb: 384,
-    vfr: true,
+    // vfr: true,
+    two-pass: '',
     aencoder: 'av_aac',
     rate: 29.97
   }
 };
 
 encodeOptions.highRes.input = path.resolve(__dirname, "sampleHighRes.mp4");
-encodeOptions.highRes.output = cwd + '/test.mp4';
-
-console.log(path.resolve(__dirname, "J1115-Sample-Class-highres.mp4"));
+encodeOptions.highRes.output = path.resolve(__dirname, 'test.mp4');
 
 hb.spawn(encodeOptions.highRes)
   .on("error", function (error) {
