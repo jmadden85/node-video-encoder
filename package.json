@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-commons": "^0.91.88",
     "cli": "^0.6.6",
+    "commander": "^2.8.1",
     "daemon": "^1.1.0",
     "handbrake": "0.0.1",
-    "handbrake-js": "^2.0.4"
+    "handbrake-js": "^2.0.4",
+    "lodash": "^3.7.0",
+    "simple-node-logger": "^0.92.21"
   }
 }
